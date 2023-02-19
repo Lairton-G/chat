@@ -1,0 +1,450 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    overflow: hidden;
+    background-color: #2f043f;
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.config-name {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #38024b; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    color: white;
+}
+.config-name form .alerts {
+    display: none;
+    padding: .6rem;
+    color: rgb(255, 0, 0);
+    border: 1px solid red;
+    background-color: rgba(255, 126, 126, 0.242);
+    border-radius: 5px;
+}
+.config-name form .alerts-sucess {
+    display: none;
+    padding: .6rem;
+    color: rgb(19, 255, 2);
+    border: 1px solid rgb(43, 255, 0);
+    background-color: rgba(128, 255, 126, 0.242);
+    border-radius: 5px;
+}
+.config-name form .header {
+    text-align: center;
+    padding: .4rem;
+    margin-bottom: 10px;
+    background-color: #38024b; 
+}
+.config-name form .header img{
+    width: 150px;
+}
+.config-name form .header h1 {
+    font-weight: 600;
+    font-family: Poppins;
+    color: #ada3a3;
+}
+.config-name .header h1 span{
+    color: white;
+}
+.config-name form {
+    width: 450px;
+    max-width: 98%;
+    background-color: #38024b; 
+    border-radius: 10px;
+    box-shadow:1px 2px 20px 0px #00000033;
+    padding: .8rem;
+}
+.config-name form label {
+    display: block;
+    padding: .4rem;
+    font-family: Poppins;
+    font-weight: 700;
+    
+}
+.config-name form input[type="text"] {
+    width: 100%;
+    padding: 1.2rem;
+    border-color: rgb(255 255 255 / 19%);
+    color: rgb(231 192 255);
+    background-color: #38024b; 
+}
+.config-name form input[type=text]:focus {
+    outline-color: blueviolet;
+}
+.config-name form input[type="text"]::placeholder {
+    opacity: 0.5;
+}
+.config-name form input[type=color] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.config-name form input[type=color]::-webkit-color-swatch {
+    border-radius: 50%;
+}
+.config-name form button {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    margin-top: 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.config-name form p{
+
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(249 228 228);
+    opacity: 0.5;
+}
+.config-name form p span {
+    color: rgb(255 255 255);
+    font-weight: 600;
+}
+.menu-aside {
+    z-index: 1;
+    width: 320px;
+    background-color: #38024b;
+    box-shadow:4px 0 10px #00000031;
+}
+.menu-aside .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: .8rem;
+    gap: 10px;
+    box-shadow:0 4px 10px #00000029;
+    margin-bottom: 12px;
+    background-color: #270035;
+}
+.menu-aside .header img {
+    width: 40px;
+    height: 40px;
+}
+.menu-aside .header h1 {
+    color: white;
+    opacity: 0.5;
+    font-size: 22px;
+}
+.menu-aside .content {
+    position: relative;
+    padding: .2rem;
+    height: 90%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.menu-aside .content .users-list {
+    padding: 1.2rem;
+    background-color: #270035;
+    border-radius: 5px;
+    color: wheat;
+    overflow: hidden;
+    height: 38%;
+}
+.menu-aside .content .users-list h1 {
+    font-size: 18px;
+    display: block;
+    padding: .2rem;
+    font-family: Poppins;
+    border-bottom: 1px solid #ffffff47;
+}
+.menu-aside .content .users-list .usersJoin {
+    border: 1px solid rgba(255, 255, 255, 0.318);
+    margin-top: 8px;
+    overflow: auto;
+    height: 75%;
+}
+.menu-aside .content .users-list .usersJoin::-webkit-scrollbar {
+    opacity: 0;
+    width: 5px;
+}
+.menu-aside .content .users-list .usersJoin::-webkit-scrollbar-thumb {
+    background-color: #5b047b;
+}
+.menu-aside .content .users-list .usersJoin::-webkit-scrollbar-track {
+    background-color: #38024b;
+}
+.menu-aside .content .users-list .usersJoin .userSpan {
+    padding: .4rem;
+    display: block;
+}
+.menu-aside .content .users-active {
+    padding: .4rem;
+    margin-bottom: 20px;
+    height:40%;
+    overflow: hidden;
+}
+.menu-aside .content .users-active h1 {
+    color: #03ff03;
+    border: none;
+    font-size: 18px;
+    display: block;
+    padding: .4rem;
+}
+.menu-aside .content .users-active .usersActive {
+    padding: .4rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.menu-aside .content .users-active .usersActive .active {
+    display: block;
+    padding: .4rem;
+    opacity: 0.8;
+    color: white;
+}
+.alter-name {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .2rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 1.2rem .4rem;
+}
+.alter-name form label {
+    display: block;
+    padding: .2rem;
+    font-family: Poppins;
+    font-weight: 600;
+}
+.alter-name form input {
+    width: 96%;
+    display: block;
+    margin: auto;
+    padding: 1.2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    outline-color: blueviolet;
+    margin-bottom: 5px;
+}
+.alter-name form button {
+    width: 100%;
+    cursor: pointer;
+    padding: .4rem;
+    background-color: blueviolet;
+    color: white;
+    font-family: Poppins;
+}
+.chat {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.chat .header {
+    background-color: #38024b;
+    padding: 1.2rem;
+    border-bottom: 1px solid #420a55;
+}
+.chat .header h1 {
+    font-family: Poppins;
+    display: block;
+    font-size: 19px;
+    color: white;
+}
+.chat .header p{
+    opacity: 0.5;
+    color: white;
+}
+.chat .header p span{
+    opacity: 100%;
+    font-weight: 700;
+}
+.chat  .messages {
+    padding: .8rem;
+    width: 100%;
+    height: 78%;
+     background-color: #38024b; 
+     color: white;
+    overflow-y: auto;
+}
+.chat .messages .message {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(168, 168, 168, 0.2);
+    padding: .4rem;
+}
+.chat .messages .message .autor {
+    display: block;
+    padding: .2rem;
+    font-weight: 700;
+    font-size: 20px;
+}
+.chat .messages .message .content a {
+    text-decoration: none;
+    font-weight: 600;
+}
+.chat .messages .message .content a:hover {
+    text-decoration: underline;
+}
+.form-messa {
+    position: relative;
+    width: 100%;
+    background-color: #2f043f;
+    padding: 1.4rem .4rem;
+}
+.form-messa form {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.form-messa form input{
+    width: 70%;
+    padding: .8rem;
+    border: 1px solid white;
+    background-color: #23052c;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    cursor: text;
+    outline-color: #5b047b;
+}
+.form-messa form button {
+    background-color: #260532;
+    color: white;
+    padding: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 0 10px 10px 0;
+}
+.form-messa form button:hover {
+    background-color: white;
+    color: black;
+}
+
+.bot {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.bot img {
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.bot .bot-content span {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-family: Poppins;
+}
+.bot .bot-content span img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.bot .bot-content .content {
+    padding: 1.2rem;
+    display: block;
+    background-color: #323232;
+    border-radius: 5px;
+    border-left: 8px solid #00f8ff;
+    color: white;
+}
+.bot .bot-content .content h1 {
+    font-size: 18px;
+    padding: .4rem;
+}
+.bot .bot-content .content p {
+    padding: .6rem;
+    background-color: #494747;
+    margin: .2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+}
+.menu-buttom {
+    padding: .2rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+    display: none;
+}
+#closeMenu {
+    display: none;
+}
+
+@media (min-width: 0px) and (max-width: 520px) {
+    main {
+        overflow: auto;
+    }
+    .menu-buttom {
+        display: block;
+    }
+    .menu-aside {
+        transition: .2s;
+        position: absolute;
+        top: 0;
+        left: -600px;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 200;
+    }
+    .chat .messages {
+        height: 77%;
+    }
+    .form-messa form {
+        width: 100%;
+    }
+    .form-messa form input {
+        width: 80%;
+    }
+    #closeMenu {
+        display: block;
+        float: right;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        padding: .4rem;
+        color: white;
+        border: none;
+        background-color: transparent;
+        font-size: 22px;
+    }
+}

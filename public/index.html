@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br, en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat RealTime </title>
+    <link rel="stylesheet" href="chatRealtime.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.942c05d3a71ff94c7b6cd93bb48f4759?rik=db0NvmyHG8GHpA&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fmartz90%2fcircle%2f512%2fchat-icon.png&ehk=gIhm82BAsVRATof2yjlwghQksGXzoz5lvyh7oW3wJc4%3d&risl=&pid=ImgRaw&r=0" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <main>
+        <div class="config-name" id="config">
+            <form id="configuration">
+                <div class="header">
+                    <img src="https://th.bing.com/th/id/R.942c05d3a71ff94c7b6cd93bb48f4759?rik=db0NvmyHG8GHpA&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fmartz90%2fcircle%2f512%2fchat-icon.png&ehk=gIhm82BAsVRATof2yjlwghQksGXzoz5lvyh7oW3wJc4%3d&risl=&pid=ImgRaw&r=0" alt=""> <h1>Chat <span>RealTime</span></h1>
+                </div>
+                <div class="alerts" id="alert"></div>
+                <div class="alerts-sucess" id="alertSucess"></div>
+                <label for="NameUser">Nome de Usuario </label>
+                <input type="text" id="NameUser" placeholder="Nome de Usuario" autocapitalize="on">
+                <label for="Color">Cor do nome</label>
+                <input type="color" id="Color" value="#fff">
+                <button type="submit">Criar Usuario</button>
+                <p>Provided by <span>Lairton Goncalves</span></p>
+            </form>
+        </div>
+        <div class="menu-aside" id="menu-aside">
+            <div class="header">
+                <img src="https://th.bing.com/th/id/R.942c05d3a71ff94c7b6cd93bb48f4759?rik=db0NvmyHG8GHpA&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fmartz90%2fcircle%2f512%2fchat-icon.png&ehk=gIhm82BAsVRATof2yjlwghQksGXzoz5lvyh7oW3wJc4%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <h1>Chat <span>RealTime</span></h1>
+                <button id="closeMenu">
+                    x
+                </button>
+            </div>
+            <div class="content">
+                <div class="users-list">
+                    <h1>Entrou agora</h1>
+                    <div class="usersJoin" id="usersJoin">
+                        <!-- <span class="userSpan">👥 <span style="font-weight: 600;">Lairton</span> Entrou</span> -->
+                    </div>
+                </div>
+                <div class="users-active">
+                    <h1>🟢 Conectados agora</h1>
+                    <div class="usersActive" id="usersActive">
+                        <!-- <span class="active"><span style="font-weight: 800;">Lairton</span> se conectou</span> -->
+                    </div>
+                </div>
+                <div class="alter-name">
+                    <form id="alterName">
+                        <div class="alerts" id="alert"></div>
+                        <div class="alerts-sucess"style="padding: .4rem; color: #0aff0a;" id="Sucess"></div>
+                        <label for="newNa">Novo Nome: </label>
+                        <input type="text" id="newName">
+                        <button type="submit">Alterar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="header">
+                <button class="menu-buttom" id="menu">
+                    <span class="material-symbols-outlined">menu</span>
+                 </button>
+                <h1>Chat RealTime</h1>
+                <p>Bem vindo <span id="user"></span></p>
+            </div>
+            <div class="messages" id="chat">
+                <!-- <div class="message">
+                    <span class="autor" style="color: red">Lairton</span>
+                    <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae possimus sit nulla, quod labore officia iusto. At vel quae inventore doloribus adipisci voluptatem maiores neque, sint enim, veritatis nam fuga?
+                    </p>
+                </div> -->
+           
+            </div>
+
+            <div class="form-messa">
+                <form id="form-chat">
+                    <input type="text" id="message" placeholder="No que está pensando?">
+                    <button type="submit">
+                        <span class="material-symbols-outlined">
+                            send
+                            </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="client.js"></script>
+</body>
+</html>
