@@ -16,17 +16,14 @@ io.on('connection', (socket) => {
   socket.on("user join", (user) => {
     socket.broadcast.emit("join_active", user);
   })
-  socket.on("active", (name)=>{
+  socket.on("active", (name) => {
     socket.broadcast.emit("active-user", name);
   })
-  socket.on("Notify", data =>{
+  socket.on("Notify", data => {
     socket.broadcast.emit("notification", data);
   })
   socket.on("message", data => {
     socket.broadcast.emit("chat", data);
-  })
-  socket.on("input", data =>{
-    socket.broadcast.emit("input", data);
   })
 });
 
