@@ -427,7 +427,7 @@ main {
         z-index: 200;
     }
     .chat .messages {
-        height: 77%;
+        height: 65%;
     }
     .form-messa form {
         width: 100%;
