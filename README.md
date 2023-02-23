@@ -1,4 +1,4 @@
-<div align="center"> <img src="https://i.ibb.co/B3RN2Xw/Screen-Shoot.png" alt="Screen-Shoot" border="0" width="50%"> </div>
+<div align="center"> <img src="https://i.ibb.co/B3RN2Xw/Screen-Shoot.png" alt="Screen-Shoot" border="0" width="60%"> </div>
 
 <h3>Veja a aplicação neste link</h3>
 
