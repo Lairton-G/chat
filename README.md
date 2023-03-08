@@ -8,3 +8,5 @@
 ![Badge Node](https://img.shields.io/badge/NODE.JS-f0f?style=for-the-badge&logo=node.js&logoColor=white) 
 
 Para aessar o chat em tempo real clique **[aqui](https://chat.lairtongoncal.repl.co/)**
+
+**Obs**: As mensagens que você enviar não serão salvas, pois não adicionei nenhuma estrutura de dados como MySQL, sequelize ou MongoDB
